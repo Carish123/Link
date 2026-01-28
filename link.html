@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecting...</title>
+</head>
+<body>
+  <script>
+    const urls = [
+      "https://www.google.com",
+      "https://www.youtube.com",
+      "https://www.wikipedia.org"
+    ];
+
+    urls.forEach((url, index) => {
+      setTimeout(() => {
+        window.open(url, "_blank");
+      }, index * 500); // 0.5 second delay between each
+    });
+  </script>
+</body>
+</html>
