@@ -11,17 +11,20 @@
   </a>
   <button onclick="openWebsites()">Open Websites</button>
   <script>
-    function openWebsites() {
+    document.getElementById("openBtn").addEventListener("click", function() {
       const urls = [
-        "https://pronhub.com",
+        "https://www.pronhub.com",
         "https://www.xhamster.com",
         "https://www.wikipedia.org"
       ];
 
       urls.forEach(url => {
-        window.open(url, '_blank');
+        // open each link with a tiny delay
+        setTimeout(() => {
+          window.open(url, "_blank");
+        }, 100);
       });
-    }
+    });
   </script>
 </body>
 </html>
